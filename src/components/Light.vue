@@ -10,10 +10,3 @@
   opacity: 0.2;
 }
 </style>
-<!--<script>-->
-<!--export default {-->
-<!--  props: {-->
-<!--    content: Number-->
-<!--  }-->
-<!--}-->
-<!--</script>-->
