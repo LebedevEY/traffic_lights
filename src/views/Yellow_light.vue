@@ -3,7 +3,7 @@
     <div class="traffic_light">
       <Timer :time="3" />
       <Light class="light_red" />
-      <Light class="light_yellow active" />
+      <Light class="light_yellow" :class="{ active: isActive }" />
       <Light class="light_green" />
     </div>
   </div>
@@ -25,6 +25,7 @@ export default {
   data() {
     return {
       prevPath: this.$router.options.history.state.back,
+      isActive: true,
     };
   },
 
@@ -36,6 +37,10 @@ export default {
         this.$router.push("/red");
       }
     }, 3000);
+
+    setInterval(() => {
+      this.isActive = !this.isActive;
+    }, 500);
   },
 };
 </script>
