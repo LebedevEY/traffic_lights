@@ -8,8 +8,8 @@ body {
 }
 
 .traffic_light {
-  width: 480px;
-  height: 1080px;
+  width: 240px;
+  height: 480px;
   background-color: #4f4f4f;
   margin: 25px auto;
   border-radius: 25px;
